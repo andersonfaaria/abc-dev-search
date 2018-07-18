@@ -79,3 +79,18 @@ Foi utilizado a ferramenta de ETL da Microsoft (SSDT) para a construção da Sta
 
 ![alt text](/staging_area.png "Staging Area")
 
+![alt text](/staging_area_02.png "Tabelas da Staging Area")
+
+#### ETL
+
+Os pacotes de importação foram divididos em:
+
+* Importar Dados Pessoais;
+* Importar Regiões;
+* Importar Cursos Superiores;
+* Importar Cursos de Doutorado;
+* Importar Cursos de Mestrado;
+* Importar Ocupação;
+* Importar Atividades.
+
+![alt text](/etl_staging_area_01.png "Pacotes do ETL")
