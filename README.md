@@ -86,7 +86,11 @@ Um grupo de empreendedores querem abrir uma startup de tecnologia na região do 
 
 Foi utilizado a ferramenta de ETL da Microsoft (SSDT) para a construção da Staging Area.
 
+Dados da tabela de informações pessoais:
+
 ![alt text](/staging_area.png "Staging Area")
+
+Lista de tabelas da Staging Area:
 
 ![alt text](/staging_area_02.png "Tabelas da Staging Area")
 
@@ -102,4 +106,14 @@ Os pacotes de importação foram divididos em:
 * Importar Ocupação;
 * Importar Atividades.
 
+Pacotes ETL:
+
 ![alt text](/etl_staging_area_01.png "Pacotes do ETL")
+
+Pacote "Importar Dados Pessoais":
+
+![alt text](/etl_staging_area_02.png "Importar Dados Pessoais")
+
+Demais pacotes de importação:
+
+![alt text](/etl_staging_area_03.png "Demais passos de importação")
