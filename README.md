@@ -20,7 +20,7 @@ Um grupo de empreendedores querem abrir uma startup de tecnologia na região do 
   * Local de trabalho
   * Tempo de deslocamento entre casa e trabalho
 
-### Campos de acordo com o documento do senso
+### Campos de acordo com o documento do censo
 
 * UNIDADE DA FEDERAÇÃO
 * CÓDIGO DO MUNICÍPIO
