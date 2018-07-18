@@ -5,12 +5,6 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "StagingArea", "src\StagingArea\StagingArea.dtproj", "{D61FA946-2079-4176-9F0D-F9A04C1B7A44}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{FEED8B79-B80F-4E0D-82C1-1B271220A4CF}"
-	ProjectSection(SolutionItems) = preProject
-		resources\Amostra_Pessoas_35_RMSP.txt = resources\Amostra_Pessoas_35_RMSP.txt
-		resources\delimiters.txt = resources\delimiters.txt
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
