@@ -71,6 +71,15 @@ Um grupo de empreendedores querem abrir uma startup de tecnologia na região do 
 * RETORNA DO TRABALHO PARA CASA DIARIAMENTE
 * QUAL É O TEMPO HABITUAL GASTO DE DESLOCAMENTO DE SUA CASA ATÉ O TRABALHO
 
+### Tabelas auxiliares utilizadas
+
+* Cursos Doutorado_Estrutura 2010.xls;
+* Cursos Mestrado_Estrutura 2010.xls;
+* Cursos Superiores_Estrutura 2010.xls;
+* Estrutura atividade CD2000.xls;
+* Ocupação COD 2010.xls;
+* Unidades da Federação, Mesorregiões, microrregiões e municípios 2010.xls.
+
 ## Desenvolvimento
 
 ### Staging Area
