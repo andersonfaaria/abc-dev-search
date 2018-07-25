@@ -2,10 +2,21 @@
 
 ## Perpectiva do negócio
 
-Um grupo de empreendedores querem abrir uma startup de tecnologia na região do ABC. Para tal precisam de informações sobre os profissionais que residem na área, para averiguar se é viável abrir um escritório na região.
+Um grupo de empreendedores querem abrir uma startup de tecnologia na região do ABC. Para tal precisam de informações sobre os profissionais que residem na área, para averiguar se é viável abrir um escritório na região. Com base na análise desses dados, as seguintes perguntas são respondidas:
+
+* Qual é a faixa salarial dos profissionais?
+* Qual é o tamanho da empresa que os profissionais trabalham?
+* Qual é o tempo que os profissionais gastam no deslocamento para o trabalho?
+* Qual é o nível de formação dos profissionais?
+* Qual é a previsão de formação dos profissionais?
+* Qual é o estado civil dos profissionais?
+* Qual é o sexo dos profissionais?
+* Qual é o número de profissionais que exercem dupla jornada?
+* O profissional tem disponibilidade para viagens a trabalho?
 
 ## Objetivos
 
+* Verificar o perfil do profissional de tecnologia residente no ABC;
 * Verficar a existência de profissionais qualificados residentes na região;
 * Verificar as condições de trabalho (salário, distância do trabalho atual, situação de moradia) destes profissionais.
 
@@ -113,6 +124,8 @@ Pacotes ETL:
 Pacote "Importar Dados Pessoais":
 
 ![alt text](/etl_staging_area_02.png "Importar Dados Pessoais")
+
+Todas as linhas são exportadas no passo "Amostra Censo 2010" e as colunas são geradas no "Derived Column". Depois, é feito o pareamento e envio dos dados para o banco de dados no último passo.
 
 Demais pacotes de importação:
 
