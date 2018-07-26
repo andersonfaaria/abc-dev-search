@@ -7,12 +7,12 @@
   DTS:CreatorName="DIREITOSBC\gustavo.tripletech"
   DTS:DTSID="{EBC7A77C-83AD-4AF4-A866-412A2C609335}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.106"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
   DTS:LocaleID="1046"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{B46EB43F-67CC-422B-ABEA-F085E2880AD6}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{C8259810-A3D8-4504-AA52-36DE4EFFCF9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Atividade">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\atividade.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\atividade.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -60,7 +60,7 @@
       DTS:ObjectName="Doutorado">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\doutorado.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\doutorado.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -80,7 +80,7 @@
       DTS:ObjectName="Mestrado">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\mestrado.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\mestrado.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -90,7 +90,7 @@
       DTS:ObjectName="Municipio">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\regioes.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\regioes.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -100,7 +100,7 @@
       DTS:ObjectName="Ocupacao">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\ocupacao.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\ocupacao.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -110,7 +110,7 @@
       DTS:ObjectName="Superior">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\superior.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\tiago.tripletech\Documents\Pessoal\abc-dev-search\resources\superior.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -2528,7 +2528,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[temp2]</property>
+                  name="OpenRowset">[dbo].[temp2]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3191,11 +3191,3001 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Importar Dados Pessoais\Tratar valores"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Tratar valores"
+              version="11">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_16a5d085f5d64404b8a7cc9fa12db14a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_16a5d085f5d64404b8a7cc9fa12db14a")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_16a5d085f5d64404b8a7cc9fa12db14a.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fc948854-7c9f-4645-b857-db2c9280e1a6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_16a5d085f5d64404b8a7cc9fa12db14a</RootNamespace>
+    <AssemblyName>SC_16a5d085f5d64404b8a7cc9fa12db14a</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_16a5d085f5d64404b8a7cc9fa12db14a" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC140</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Reflection;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        char[] charsToRemove = { ',', '.', '(', ')', '/', ' ' };
+
+        foreach (IDTSInputColumn100 column in this.ComponentMetaData.InputCollection[0].InputColumnCollection)
+        {
+            var columnName = CleanString(column.Name, charsToRemove);
+            PropertyInfo columnValue = Row.GetType().GetProperty(columnName);
+
+            if (!columnValue.Name.EndsWith("_IsNull"))
+            {
+                var value = columnValue.GetValue(Row, null);
+
+                if (columnValue.PropertyType == typeof(string))
+                {
+                    string stringValue = value.ToString().Trim();
+                    columnValue.SetValue(Row, stringValue ?? null, null);
+                }
+            }
+        }
+    }
+
+    public string CleanString(string value, char[] charsToString)
+    {
+        string newValue = "";
+
+        for (int i = 0; i < value.Length; i++)
+        {
+            bool addChar = true;
+
+            foreach (var c in charsToString)
+            {
+                if (value[i] == c)
+                {
+                    addChar = false;
+                    break;
+                }
+            }
+
+            if (addChar)
+                newValue += value[i];
+        }
+
+        return newValue ?? null;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String UNIDADEDAFEDERAÇÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool UNIDADEDAFEDERAÇÃO_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CÓDIGODOMUNICÍPIO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool CÓDIGODOMUNICÍPIO_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String REGIÃOGEOGRÁFICA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool REGIÃOGEOGRÁFICA_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CÓDIGODAMESORREGIÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[3]);
+        }
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool CÓDIGODAMESORREGIÃO_IsNull
+    {
+        get
+        {
+            return IsNull(3);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CÓDIGODAMICRORREGIÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[4]);
+        }
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool CÓDIGODAMICRORREGIÃO_IsNull
+    {
+        get
+        {
+            return IsNull(4);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CÓDIGODAREGIÃOMETROPOLITANA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[5]);
+        }
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool CÓDIGODAREGIÃOMETROPOLITANA_IsNull
+    {
+        get
+        {
+            return IsNull(5);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SITUAÇÃODODOMICÍLIO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[6]);
+        }
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool SITUAÇÃODODOMICÍLIO_IsNull
+    {
+        get
+        {
+            return IsNull(6);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SEXO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[7]);
+        }
+        set
+        {
+            this[7] = value;
+        }
+    }
+    public bool SEXO_IsNull
+    {
+        get
+        {
+            return IsNull(7);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String VARIÁVELAUXILIARDAIDADECALCULADAANOSEMESES
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[8]);
+        }
+        set
+        {
+            this[8] = value;
+        }
+    }
+    public bool VARIÁVELAUXILIARDAIDADECALCULADAANOSEMESES_IsNull
+    {
+        get
+        {
+            return IsNull(8);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(8);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String TEMPODEMORADIANAUF
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[9]);
+        }
+        set
+        {
+            this[9] = value;
+        }
+    }
+    public bool TEMPODEMORADIANAUF_IsNull
+    {
+        get
+        {
+            return IsNull(9);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(9);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String TEMPODEMORADIANOMUNICÍPIO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[10]);
+        }
+        set
+        {
+            this[10] = value;
+        }
+    }
+    public bool TEMPODEMORADIANOMUNICÍPIO_IsNull
+    {
+        get
+        {
+            return IsNull(10);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(10);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String UFDERESIDÊNCIAANTERIOR
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[11]);
+        }
+        set
+        {
+            this[11] = value;
+        }
+    }
+    public bool UFDERESIDÊNCIAANTERIOR_IsNull
+    {
+        get
+        {
+            return IsNull(11);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(11);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String MUNICÍPIODERESIDÊNCIAANTERIOR
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[12]);
+        }
+        set
+        {
+            this[12] = value;
+        }
+    }
+    public bool MUNICÍPIODERESIDÊNCIAANTERIOR_IsNull
+    {
+        get
+        {
+            return IsNull(12);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(12);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CURSOQUEFREQUENTA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[13]);
+        }
+        set
+        {
+            this[13] = value;
+        }
+    }
+    public bool CURSOQUEFREQUENTA_IsNull
+    {
+        get
+        {
+            return IsNull(13);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(13);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SÉRIEANOQUEFREQUENTA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[14]);
+        }
+        set
+        {
+            this[14] = value;
+        }
+    }
+    public bool SÉRIEANOQUEFREQUENTA_IsNull
+    {
+        get
+        {
+            return IsNull(14);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(14);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SÉRIEQUEFREQUENTA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[15]);
+        }
+        set
+        {
+            this[15] = value;
+        }
+    }
+    public bool SÉRIEQUEFREQUENTA_IsNull
+    {
+        get
+        {
+            return IsNull(15);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(15);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CONCLUSÃODEOUTROCURSOSUPERIORDEGRADUAÇÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[16]);
+        }
+        set
+        {
+            this[16] = value;
+        }
+    }
+    public bool CONCLUSÃODEOUTROCURSOSUPERIORDEGRADUAÇÃO_IsNull
+    {
+        get
+        {
+            return IsNull(16);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(16);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CURSOMAISELEVADOQUEFREQUENTOU
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[17]);
+        }
+        set
+        {
+            this[17] = value;
+        }
+    }
+    public bool CURSOMAISELEVADOQUEFREQUENTOU_IsNull
+    {
+        get
+        {
+            return IsNull(17);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(17);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CONCLUSÃODESTECURSO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[18]);
+        }
+        set
+        {
+            this[18] = value;
+        }
+    }
+    public bool CONCLUSÃODESTECURSO_IsNull
+    {
+        get
+        {
+            return IsNull(18);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(18);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ESPÉCIEDOCURSOMAISELEVADOCONCLUÍDO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[19]);
+        }
+        set
+        {
+            this[19] = value;
+        }
+    }
+    public bool ESPÉCIEDOCURSOMAISELEVADOCONCLUÍDO_IsNull
+    {
+        get
+        {
+            return IsNull(19);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(19);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String NÍVELDEINSTRUÇÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[20]);
+        }
+        set
+        {
+            this[20] = value;
+        }
+    }
+    public bool NÍVELDEINSTRUÇÃO_IsNull
+    {
+        get
+        {
+            return IsNull(20);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(20);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CURSOSUPERIORDEGRADUAÇÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[21]);
+        }
+        set
+        {
+            this[21] = value;
+        }
+    }
+    public bool CURSOSUPERIORDEGRADUAÇÃO_IsNull
+    {
+        get
+        {
+            return IsNull(21);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(21);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CURSODEMESTRADO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[22]);
+        }
+        set
+        {
+            this[22] = value;
+        }
+    }
+    public bool CURSODEMESTRADO_IsNull
+    {
+        get
+        {
+            return IsNull(22);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(22);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CURSODEDOUTORADO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[23]);
+        }
+        set
+        {
+            this[23] = value;
+        }
+    }
+    public bool CURSODEDOUTORADO_IsNull
+    {
+        get
+        {
+            return IsNull(23);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(23);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String MUNICÍPIOEUNIDADEDAFEDERAÇÃOOUPAÍSESTRANGEIROQUEFREQUENTAVAESCOLAOUCRECHE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[24]);
+        }
+        set
+        {
+            this[24] = value;
+        }
+    }
+    public bool MUNICÍPIOEUNIDADEDAFEDERAÇÃOOUPAÍSESTRANGEIROQUEFREQUENTAVAESCOLAOUCRECHE_IsNull
+    {
+        get
+        {
+            return IsNull(24);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(24);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String UFQUEFREQUENTAVAESCOLAOUCRECHE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[25]);
+        }
+        set
+        {
+            this[25] = value;
+        }
+    }
+    public bool UFQUEFREQUENTAVAESCOLAOUCRECHE_IsNull
+    {
+        get
+        {
+            return IsNull(25);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(25);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String MUNICÍPIOQUEFREQUENTAVAESCOLAOUCRECHE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[26]);
+        }
+        set
+        {
+            this[26] = value;
+        }
+    }
+    public bool MUNICÍPIOQUEFREQUENTAVAESCOLAOUCRECHE_IsNull
+    {
+        get
+        {
+            return IsNull(26);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(26);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String PAÍSESTRANGEIROQUEFREQUENTAVAESCOLAOUCRECHE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[27]);
+        }
+        set
+        {
+            this[27] = value;
+        }
+    }
+    public bool PAÍSESTRANGEIROQUEFREQUENTAVAESCOLAOUCRECHE_IsNull
+    {
+        get
+        {
+            return IsNull(27);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(27);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String VIVEEMCOMPANHIADECÔNJUGEOUCOMPANHEIROA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[28]);
+        }
+        set
+        {
+            this[28] = value;
+        }
+    }
+    public bool VIVEEMCOMPANHIADECÔNJUGEOUCOMPANHEIROA_IsNull
+    {
+        get
+        {
+            return IsNull(28);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(28);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String NATUREZADAUNIÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[29]);
+        }
+        set
+        {
+            this[29] = value;
+        }
+    }
+    public bool NATUREZADAUNIÃO_IsNull
+    {
+        get
+        {
+            return IsNull(29);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(29);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ESTADOCIVIL
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[30]);
+        }
+        set
+        {
+            this[30] = value;
+        }
+    }
+    public bool ESTADOCIVIL_IsNull
+    {
+        get
+        {
+            return IsNull(30);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(30);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String QUANTOSTRABALHOSTINHA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[31]);
+        }
+        set
+        {
+            this[31] = value;
+        }
+    }
+    public bool QUANTOSTRABALHOSTINHA_IsNull
+    {
+        get
+        {
+            return IsNull(31);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(31);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String OCUPAÇÃO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[32]);
+        }
+        set
+        {
+            this[32] = value;
+        }
+    }
+    public bool OCUPAÇÃO_IsNull
+    {
+        get
+        {
+            return IsNull(32);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(32);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ATIVIDADE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[33]);
+        }
+        set
+        {
+            this[33] = value;
+        }
+    }
+    public bool ATIVIDADE_IsNull
+    {
+        get
+        {
+            return IsNull(33);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(33);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String NESSETRABALHOERA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[34]);
+        }
+        set
+        {
+            this[34] = value;
+        }
+    }
+    public bool NESSETRABALHOERA_IsNull
+    {
+        get
+        {
+            return IsNull(34);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(34);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String QUANTASPESSOASEMPREGAVANESSETRABALHO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[35]);
+        }
+        set
+        {
+            this[35] = value;
+        }
+    }
+    public bool QUANTASPESSOASEMPREGAVANESSETRABALHO_IsNull
+    {
+        get
+        {
+            return IsNull(35);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(35);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String NOTRABALHOPRINCIPALQUALERAORENDIMENTOBRUTOOUARETIRADAMENSALQUEGANHAVAHABITUALMENTEEMJULHODE2010
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[36]);
+        }
+        set
+        {
+            this[36] = value;
+        }
+    }
+    public bool NOTRABALHOPRINCIPALQUALERAORENDIMENTOBRUTOOUARETIRADAMENSALQUEGANHAVAHABITUALMENTEEMJULHODE2010_IsNull
+    {
+        get
+        {
+            return IsNull(36);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(36);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String VALORDORENDIMENTOBRUTOOUARETIRADAMENSALNOTRABALHOPRINCIPAL
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[37]);
+        }
+        set
+        {
+            this[37] = value;
+        }
+    }
+    public bool VALORDORENDIMENTOBRUTOOUARETIRADAMENSALNOTRABALHOPRINCIPAL_IsNull
+    {
+        get
+        {
+            return IsNull(37);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(37);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String RENDIMENTONOTRABALHOPRINCIPAL
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[38]);
+        }
+        set
+        {
+            this[38] = value;
+        }
+    }
+    public bool RENDIMENTONOTRABALHOPRINCIPAL_IsNull
+    {
+        get
+        {
+            return IsNull(38);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(38);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String VALORDORENDIMENTOBRUTOOUARETIRADAMENSALNOSDEMAISTRABALHOSEMREAIS
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[39]);
+        }
+        set
+        {
+            this[39] = value;
+        }
+    }
+    public bool VALORDORENDIMENTOBRUTOOUARETIRADAMENSALNOSDEMAISTRABALHOSEMREAIS_IsNull
+    {
+        get
+        {
+            return IsNull(39);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(39);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String RENDIMENTOEMTODOSOSTRABALHOS
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[40]);
+        }
+        set
+        {
+            this[40] = value;
+        }
+    }
+    public bool RENDIMENTOEMTODOSOSTRABALHOS_IsNull
+    {
+        get
+        {
+            return IsNull(40);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(40);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String RENDIMENTOEMTODOSOSTRABALHOSEMNºDESALÁRIOSMÍNIMOS
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[41]);
+        }
+        set
+        {
+            this[41] = value;
+        }
+    }
+    public bool RENDIMENTOEMTODOSOSTRABALHOSEMNºDESALÁRIOSMÍNIMOS_IsNull
+    {
+        get
+        {
+            return IsNull(41);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(41);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String EMQUEMUNICÍPIOEUNIDADEDAFEDERAÇÃOOUPAÍSESTRANGEIROTRABALHA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[42]);
+        }
+        set
+        {
+            this[42] = value;
+        }
+    }
+    public bool EMQUEMUNICÍPIOEUNIDADEDAFEDERAÇÃOOUPAÍSESTRANGEIROTRABALHA_IsNull
+    {
+        get
+        {
+            return IsNull(42);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(42);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String EMQUEUNIDADEDAFEDERAÇÃOTRABALHAVA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[43]);
+        }
+        set
+        {
+            this[43] = value;
+        }
+    }
+    public bool EMQUEUNIDADEDAFEDERAÇÃOTRABALHAVA_IsNull
+    {
+        get
+        {
+            return IsNull(43);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(43);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String EMQUEMUNICÍPIOTRABALHAVA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[44]);
+        }
+        set
+        {
+            this[44] = value;
+        }
+    }
+    public bool EMQUEMUNICÍPIOTRABALHAVA_IsNull
+    {
+        get
+        {
+            return IsNull(44);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(44);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String EMQUEPAÍSESTRANGEIROTRABALHAVA
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[45]);
+        }
+        set
+        {
+            this[45] = value;
+        }
+    }
+    public bool EMQUEPAÍSESTRANGEIROTRABALHAVA_IsNull
+    {
+        get
+        {
+            return IsNull(45);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(45);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String RETORNADOTRABALHOPARACASADIARIAMENTE
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[46]);
+        }
+        set
+        {
+            this[46] = value;
+        }
+    }
+    public bool RETORNADOTRABALHOPARACASADIARIAMENTE_IsNull
+    {
+        get
+        {
+            return IsNull(46);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(46);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String QUALÉOTEMPOHABITUALGASTODEDESLOCAMENTODESUACASAATÉOTRABALHO
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[47]);
+        }
+        set
+        {
+            this[47] = value;
+        }
+    }
+    public bool QUALÉOTEMPOHABITUALGASTODEDESLOCAMENTODESUACASAATÉOTRABALHO_IsNull
+    {
+        get
+        {
+            return IsNull(47);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(47);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_16a5d085f5d64404b8a7cc9fa12db14a</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_16a5d085f5d64404b8a7cc9fa12db14a</msb:DisplayName>
+    <msb:ProjectId>{178CFD59-8D75-4371-ABB7-F2A69DDA2B46}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_16a5d085f5d64404b8a7cc9fa12db14a.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:Breakpoint Include="4fbc4769baa14716894f1483bd13b033">
+      <msb:FileName>main.cs</msb:FileName>
+      <msb:ColumnNumber>9</msb:ColumnNumber>
+      <msb:Enabled>True</msb:Enabled>
+      <msb:LineNumber>122</msb:LineNumber>
+      <msb:Condition>
+      </msb:Condition>
+      <msb:ConditionType>1</msb:ConditionType>
+      <msb:Language>C#</msb:Language>
+      <msb:HitCountType>1</msb:HitCountType>
+      <msb:HitCountTarget>1</msb:HitCountTarget>
+    </msb:Breakpoint>
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Settings.get_Default():SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Sett" +
+    "ings")]
+
+namespace SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_16a5d085f5d64404b8a7cc9fa12db14a.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_16a5d085f5d64404b8a7cc9fa12db14a.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[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
+aREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREA
+AAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEA
+aREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREA
+AAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEA
+aREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREA
+AAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEA
+aREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREA
+AAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEAaREAAAEA
+ugQAAAIA9w4AAAMAZiMAAAQAESMAAAEAZiMAAAEA4yUAAAEAVyUAAAEAVyUAAAEAaREJAMQjAQAR
+AMQjBgAZAMQjCgApAMQjEAAxAMQjEAA5AMQjEABBAMQjEABJAMQjEABRAMQjEABZAMQjEABhAMQj
+EABpAMQjBgC5AMQjBgDZAMQjFQDpAMQjBgCxAEARBgCxAEsRBgABAeclKwCxAHwONQAZAaAiOwAh
+ARUiQQAxAYYiSAA5AbYjTgBxAGElUwB5AO4OVwCJACwPWwBBARAmYQBJAe4OVwBRAbgRZwCBAFcR
+bACBADQPWwBBAdwOcwBBAQQmfACJAJoRVwBRAS4iVwCBAGARhgBxAL8ljgCRAIUPBgBRAfQknQD5
+AJoRVwBRAQ0logBRAa0RqACZAMQjrACZAGYjtgCZAKAkugChAKMRvgCZAB4iwwCZAAYiyQCZAA0i
+AQBhAcQjEACZAN8ljgCZABsljgCxAMQjBgBRAc4kzgCxALQk1gCJAMQjBgBBAfcl3ADBAMQj4gDh
+AMQjBgAuAAsAagEuABMAcwEuABsAkgEuACMAmwEuACsAxAEuADMAxAEuADsAxAEuAEMAmwEuAEsA
+ygEuAFMAxAEuAFsA4QFDAGMAKwLhAHsAKwLjAGsAKwIjAXsAKwIpDHMAkgFJDHMAkgEBAAwAAAAK
+ABsAkgADAAEABwBhAAgAYwAAABMLUwEAADUeVwEAAK4JUwEAAGAcVwEAAJwBUwEAAPcSVwEAAJgK
+UwEAAJAdVwEAAGMKUwEAAE0dVwEAAI8CUwEAABQUVwEAAHsJUwEAAB8cVwEAAD8KUwEAABsdVwEA
+AKoMUwEAACAgVwEAAO0GUwEAABMZVwEAAOUJUwEAAKUcVwEAABYMUwEAAHAfVwEAAFYMUwEAAL4f
+VwEAAKsDUwEAAHYVVwEAAHsDUwEAADgVVwEAAEoDUwEAAPkUVwEAAFwLUwEAAIweVwEAADoOUwEA
+AOghVwEAAB0KUwEAAOscVwEAAGEIUwEAANsaVwEAAOILUwEAAC4fVwEAAKsLUwEAAOkeVwEAACQI
+UwEAAJAaVwEAAPsHUwEAAFkaVwEAANAFUwEAAMwXVwEAAAUFUwEAAOUWVwEAAFMFUwEAAEEXVwEA
+AFMGUwEAAF0YVwEAAN0CUwEAAHAUVwEAAMcKUwEAAM0dVwEAANYHUwEAACYaVwEAAFMCUwEAAMoT
+VwEAAOsKUwEAAP8dVwEAANQEUwEAAKYWVwEAAB4DUwEAAL8UVwEAALMIUwEAADsbVwEAANYAUwEA
+AG4SVwEAAEMHUwEAAHcZVwEAAKQHUwEAAOYZVwEAAB8NUwEAAKMgVwEAAIUNUwEAABchVwEAAN8N
+UwEAAH8hVwEAAPYBUwEAAF8TVwEAAG0EUwEAAGIWVwEAAN8DUwEAALgVVwEAACEEUwEAAAgWVwEA
+AK0GUwEAAMUYVwEAAB4JUwEAALQbVwEAAHEjWwEAAGUPYAEAACslZQECAAcAAwABAAgAAwACAAkA
+BQABAAoABQACAAsABwABAAwABwACAA0ACQABAA4ACQACAA8ACwABABAACwACABEADQABABIADQAC
+ABMADwABABQADwACABUAEQABABYAEQACABcAEwABABgAEwACABkAFQABABoAFQACABsAFwABABwA
+FwACAB0AGQABAB4AGQACAB8AGwABACAAGwACACEAHQABACIAHQACACMAHwABACQAHwACACUAIQAB
+ACYAIQACACcAIwABACgAIwACACkAJQABACoAJQACACsAJwABACwAJwACAC0AKQABAC4AKQACAC8A
+KwABADAAKwACADEALQABADIALQACADMALwABADQALwACADUAMQABADYAMQACADcAMwABADgAMwAC
+ADkANQABADoANQACADsANwABADwANwACAD0AOQABAD4AOQACAD8AOwABAEAAOwACAEEAPQABAEIA
+PQACAEMAPwABAEQAPwACAEUAQQABAEYAQQACAEcAQwABAEgAQwACAEkARQABAEoARQACAEsARwAB
+AEwARwACAE0ASQABAE4ASQACAE8ASwABAFAASwACAFEATQABAFIATQACAFMATwABAFQATwACAFUA
+UQABAFYAUQACAFcAUwABAFgAUwACAFkAVQABAFoAVQACAFsAVwABAFwAVwACAF0AWQABAF4AWQAC
+AF8AWwABAGAAWwACAGEAXQABAGIAXQACAGMAXwABAGQAXwACAGUAYQABAGYAYQACAGcAYwABAGgA
+YwACAGkAZQABAGoAZQACAGsAZwABAGwAZwACAG0AaQABAG4AaQACAG8AawABAHAAawACAHEAbQAB
+AHIAbQACAHMAbwABAHQAbwACAHUAcQABAHYAcQACAHcAcwABAHgAcwACAHkAdQABAHoAdQACAHsA
+dwABAHwAdwACAH0AeQABAH4AeQACAH8AewABAIAAewACAIEAfQABAIIAfQACAIMAfwABAIQAfwAC
+AIUAgQABAIYAgQACAIcAgwABAIgAgwACAIkAhQABAIoAhQACAIsAhwABAIwAhwACAI0AiQABAI4A
+iQACAI8AiwABAJAAiwACAJEAjQABAJIAjQACAJMAjwABAJQAjwACAJUAkQABAJYAkQACAJcAkwAB
+AJgAkwACAJkAlQABAJoAlQACAJsAlwABAJwAlwACAJ0AmQABAJ4AmQACAJ8AmwABAKAAmwACAKEA
+nQABAKIAnQACAKMAnwABAKQAnwACAKUAoQABAKYAoQACAKcAowABAKgAowACAKkApQABAKoApQAC
+AKsApwABAKwApwACAK0AqQABAK4AqQACAK8AqwABALAAqwACALEArQABALIArQACALMArwABALQA
+rwACALUAsQABALYAsQACALcAswABALgAswACALkAtQABALoAtQACALsAtwABALwAtwACAL0AuQAB
+AL4AuQACAL8AuwABAMAAuwACAMEAvQABAMIAvQACAMMAvwABAMQAvwACAMUAwQABAMYAwQACANAA
+wwACANEAxQABANIAxQACANMAxwAIdAAACAAEgAAAAQAAAAAAAAAAAAAAAABYDgAABAAAAAAAAAAA
+AAAA6gCSDgAAAAAOAAAAAAAAAAAAAADzAG0lAAAAAA4AAAAAAAAAAAAAAPMAGyMAAAAADgAAAAAA
+AAAAAAAA8wCKJQAAAAAEAAAAAAAAAAAAAADqACciAAAAAAAAAAABAAAAFSQAAAoACQAAAAAAAElE
+VFNDb21wb25lbnRNZXRhRGF0YTEwMABJRFRTSW5wdXRDb2x1bW4xMDAASURUU0lucHV0Q29sdW1u
+Q29sbGVjdGlvbjEwMABJRFRTSW5wdXRDb2xsZWN0aW9uMTAwAElEVFNJbnB1dDEwMABnZXRfTk9U
+UkFCQUxIT1BSSU5DSVBBTFFVQUxFUkFPUkVORElNRU5UT0JSVVRPT1VBUkVUSVJBREFNRU5TQUxR
+VUVHQU5IQVZBSEFCSVRVQUxNRU5URUVNSlVMSE9ERTIwMTAAc2V0X05PVFJBQkFMSE9QUklOQ0lQ
+QUxRVUFMRVJBT1JFTkRJTUVOVE9CUlVUT09VQVJFVElSQURBTUVOU0FMUVVFR0FOSEFWQUhBQklU
+VUFMTUVOVEVFTUpVTEhPREUyMDEwAF9fU3RhdGljQXJyYXlJbml0VHlwZVNpemU9MTIASW50MzIA
+PE1vZHVsZT4APFByaXZhdGVJbXBsZW1lbnRhdGlvbkRldGFpbHM+AGdldF9SRUdJw4NPR0VPR1LD
+gUZJQ0EAc2V0X1JFR0nDg09HRU9HUsOBRklDQQBnZXRfRU1RVUVNVU5JQ8ONUElPRVVOSURBREVE
+QUZFREVSQcOHw4NPT1VQQcONU0VTVFJBTkdFSVJPVFJBQkFMSEEAc2V0X0VNUVVFTVVOSUPDjVBJ
+T0VVTklEQURFREFGRURFUkHDh8ODT09VUEHDjVNFU1RSQU5HRUlST1RSQUJBTEhBAGdldF9RVUFO
+VE9TVFJBQkFMSE9TVElOSEEAc2V0X1FVQU5UT1NUUkFCQUxIT1NUSU5IQQBnZXRfQ8OTRElHT0RB
+UkVHScODT01FVFJPUE9MSVRBTkEAc2V0X0PDk0RJR09EQVJFR0nDg09NRVRST1BPTElUQU5BAGdl
+dF9WSVZFRU1DT01QQU5ISUFERUPDlE5KVUdFT1VDT01QQU5IRUlST0EAc2V0X1ZJVkVFTUNPTVBB
+TkhJQURFQ8OUTkpVR0VPVUNPTVBBTkhFSVJPQQBnZXRfTkVTU0VUUkFCQUxIT0VSQQBzZXRfTkVT
+U0VUUkFCQUxIT0VSQQBnZXRfU8OJUklFUVVFRlJFUVVFTlRBAHNldF9Tw4lSSUVRVUVGUkVRVUVO
+VEEAZ2V0X1PDiVJJRUFOT1FVRUZSRVFVRU5UQQBzZXRfU8OJUklFQU5PUVVFRlJFUVVFTlRBAGdl
+dF9DVVJTT1FVRUZSRVFVRU5UQQBzZXRfQ1VSU09RVUVGUkVRVUVOVEEAZ2V0X0VNUVVFTVVOSUPD
+jVBJT1RSQUJBTEhBVkEAc2V0X0VNUVVFTVVOSUPDjVBJT1RSQUJBTEhBVkEAZ2V0X0VNUVVFUEHD
+jVNFU1RSQU5HRUlST1RSQUJBTEhBVkEAc2V0X0VNUVVFUEHDjVNFU1RSQU5HRUlST1RSQUJBTEhB
+VkEAZ2V0X0VNUVVFVU5JREFERURBRkVERVJBw4fDg09UUkFCQUxIQVZBAHNldF9FTVFVRVVOSURB
+REVEQUZFREVSQcOHw4NPVFJBQkFMSEFWQQBBOTMyQjRDNzdDNjUwOUIwODdENjI4NDJEODc0ODNC
+RjYyRTNBQjdCAElucHV0SUQAZ2V0X0FUSVZJREFERQBzZXRfQVRJVklEQURFAGdldF9VRlFVRUZS
+RVFVRU5UQVZBRVNDT0xBT1VDUkVDSEUAc2V0X1VGUVVFRlJFUVVFTlRBVkFFU0NPTEFPVUNSRUNI
+RQBnZXRfTVVOSUPDjVBJT1FVRUZSRVFVRU5UQVZBRVNDT0xBT1VDUkVDSEUAc2V0X01VTklDw41Q
+SU9RVUVGUkVRVUVOVEFWQUVTQ09MQU9VQ1JFQ0hFAGdldF9NVU5JQ8ONUElPRVVOSURBREVEQUZF
+REVSQcOHw4NPT1VQQcONU0VTVFJBTkdFSVJPUVVFRlJFUVVFTlRBVkFFU0NPTEFPVUNSRUNIRQBz
+ZXRfTVVOSUPDjVBJT0VVTklEQURFREFGRURFUkHDh8ODT09VUEHDjVNFU1RSQU5HRUlST1FVRUZS
+RVFVRU5UQVZBRVNDT0xBT1VDUkVDSEUAZ2V0X1BBw41TRVNUUkFOR0VJUk9RVUVGUkVRVUVOVEFW
+QUVTQ09MQU9VQ1JFQ0hFAHNldF9QQcONU0VTVFJBTkdFSVJPUVVFRlJFUVVFTlRBVkFFU0NPTEFP
+VUNSRUNIRQBnZXRfUkVUT1JOQURPVFJBQkFMSE9QQVJBQ0FTQURJQVJJQU1FTlRFAHNldF9SRVRP
+Uk5BRE9UUkFCQUxIT1BBUkFDQVNBRElBUklBTUVOVEUAZ2V0X1RFTVBPREVNT1JBRElBTkFVRgBz
+ZXRfVEVNUE9ERU1PUkFESUFOQVVGAGdldF9WQUxPUkRPUkVORElNRU5UT0JSVVRPT1VBUkVUSVJB
+REFNRU5TQUxOT1RSQUJBTEhPUFJJTkNJUEFMAHNldF9WQUxPUkRPUkVORElNRU5UT0JSVVRPT1VB
+UkVUSVJBREFNRU5TQUxOT1RSQUJBTEhPUFJJTkNJUEFMAGdldF9SRU5ESU1FTlRPTk9UUkFCQUxI
+T1BSSU5DSVBBTABzZXRfUkVORElNRU5UT05PVFJBQkFMSE9QUklOQ0lQQUwAZ2V0X0VTVEFET0NJ
+VklMAHNldF9FU1RBRE9DSVZJTABnZXRfQ1VSU09ERURPVVRPUkFETwBzZXRfQ1VSU09ERURPVVRP
+UkFETwBnZXRfQ1VSU09ERU1FU1RSQURPAHNldF9DVVJTT0RFTUVTVFJBRE8AZ2V0X0VTUMOJQ0lF
+RE9DVVJTT01BSVNFTEVWQURPQ09OQ0xVw41ETwBzZXRfRVNQw4lDSUVET0NVUlNPTUFJU0VMRVZB
+RE9DT05DTFXDjURPAGdldF9RVUFOVEFTUEVTU09BU0VNUFJFR0FWQU5FU1NFVFJBQkFMSE8Ac2V0
+X1FVQU5UQVNQRVNTT0FTRU1QUkVHQVZBTkVTU0VUUkFCQUxITwBnZXRfUVVBTMOJT1RFTVBPSEFC
+SVRVQUxHQVNUT0RFREVTTE9DQU1FTlRPREVTVUFDQVNBQVTDiU9UUkFCQUxITwBzZXRfUVVBTMOJ
+T1RFTVBPSEFCSVRVQUxHQVNUT0RFREVTTE9DQU1FTlRPREVTVUFDQVNBQVTDiU9UUkFCQUxITwBn
+ZXRfU0lUVUHDh8ODT0RPRE9NSUPDjUxJTwBzZXRfU0lUVUHDh8ODT0RPRE9NSUPDjUxJTwBnZXRf
+Q8OTRElHT0RPTVVOSUPDjVBJTwBzZXRfQ8OTRElHT0RPTVVOSUPDjVBJTwBnZXRfVEVNUE9ERU1P
+UkFESUFOT01VTklDw41QSU8Ac2V0X1RFTVBPREVNT1JBRElBTk9NVU5JQ8ONUElPAGdldF9DT05D
+TFVTw4NPREVTVEVDVVJTTwBzZXRfQ09OQ0xVU8ODT0RFU1RFQ1VSU08AZ2V0X1NFWE8Ac2V0X1NF
+WE8AZ2V0X0PDk0RJR09EQU1JQ1JPUlJFR0nDg08Ac2V0X0PDk0RJR09EQU1JQ1JPUlJFR0nDg08A
+Z2V0X0PDk0RJR09EQU1FU09SUkVHScODTwBzZXRfQ8OTRElHT0RBTUVTT1JSRUdJw4NPAGdldF9O
+QVRVUkVaQURBVU5Jw4NPAHNldF9OQVRVUkVaQURBVU5Jw4NPAGdldF9PQ1VQQcOHw4NPAHNldF9P
+Q1VQQcOHw4NPAGdldF9VTklEQURFREFGRURFUkHDh8ODTwBzZXRfVU5JREFERURBRkVERVJBw4fD
+g08AZ2V0X0NPTkNMVVPDg09ERU9VVFJPQ1VSU09TVVBFUklPUkRFR1JBRFVBw4fDg08Ac2V0X0NP
+TkNMVVPDg09ERU9VVFJPQ1VSU09TVVBFUklPUkRFR1JBRFVBw4fDg08AZ2V0X0NVUlNPU1VQRVJJ
+T1JERUdSQURVQcOHw4NPAHNldF9DVVJTT1NVUEVSSU9SREVHUkFEVUHDh8ODTwBnZXRfTsONVkVM
+REVJTlNUUlXDh8ODTwBzZXRfTsONVkVMREVJTlNUUlXDh8ODTwBnZXRfVUZERVJFU0lEw4pOQ0lB
+QU5URVJJT1IAc2V0X1VGREVSRVNJRMOKTkNJQUFOVEVSSU9SAGdldF9NVU5JQ8ONUElPREVSRVNJ
+RMOKTkNJQUFOVEVSSU9SAHNldF9NVU5JQ8ONUElPREVSRVNJRMOKTkNJQUFOVEVSSU9SAGdldF9W
+QVJJw4FWRUxBVVhJTElBUkRBSURBREVDQUxDVUxBREFBTk9TRU1FU0VTAHNldF9WQVJJw4FWRUxB
+VVhJTElBUkRBSURBREVDQUxDVUxBREFBTk9TRU1FU0VTAGdldF9WQUxPUkRPUkVORElNRU5UT0JS
+VVRPT1VBUkVUSVJBREFNRU5TQUxOT1NERU1BSVNUUkFCQUxIT1NFTVJFQUlTAHNldF9WQUxPUkRP
+UkVORElNRU5UT0JSVVRPT1VBUkVUSVJBREFNRU5TQUxOT1NERU1BSVNUUkFCQUxIT1NFTVJFQUlT
+AGdldF9SRU5ESU1FTlRPRU1UT0RPU09TVFJBQkFMSE9TAHNldF9SRU5ESU1FTlRPRU1UT0RPU09T
+VFJBQkFMSE9TAGdldF9SRU5ESU1FTlRPRU1UT0RPU09TVFJBQkFMSE9TRU1OwrpERVNBTMOBUklP
+U03DjU5JTU9TAHNldF9SRU5ESU1FTlRPRU1UT0RPU09TVFJBQkFMSE9TRU1OwrpERVNBTMOBUklP
+U03DjU5JTU9TAGdldF9DVVJTT01BSVNFTEVWQURPUVVFRlJFUVVFTlRPVQBzZXRfQ1VSU09NQUlT
+RUxFVkFET1FVRUZSRVFVRU5UT1UAU0NfMTZhNWQwODVmNWQ2NDQwNGI4YTdjYzlmYTEyZGIxNGEA
+Z2V0X0NvbXBvbmVudE1ldGFEYXRhAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBJRGlzcG9zYWJs
+ZQBSdW50aW1lRmllbGRIYW5kbGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUA
+Z2V0X05hbWUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFZhbHVl
+VHlwZQBHZXRUeXBlAGdldF9Qcm9wZXJ0eVR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVz
+b3VyY2VDdWx0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAERpc3Bvc2UARWRpdG9yQnJvd3Nh
+YmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0
+dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3Nl
+bWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1l
+d29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNj
+cmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5
+UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29t
+cG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGlt
+ZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBHZXRWYWx1ZQBT
+ZXRWYWx1ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAENsZWFuU3RyaW5nAGNoYXJz
+VG9TdHJpbmcAR2V0U3RyaW5nAGdldF9MZW5ndGgARW5kc1dpdGgAU3lzdGVtLkNvbXBvbmVudE1v
+ZGVsAFNDXzE2YTVkMDg1ZjVkNjQ0MDRiOGE3Y2M5ZmExMmRiMTRhLmRsbABnZXRfTk9UUkFCQUxI
+T1BSSU5DSVBBTFFVQUxFUkFPUkVORElNRU5UT0JSVVRPT1VBUkVUSVJBREFNRU5TQUxRVUVHQU5I
+QVZBSEFCSVRVQUxNRU5URUVNSlVMSE9ERTIwMTBfSXNOdWxsAHNldF9OT1RSQUJBTEhPUFJJTkNJ
+UEFMUVVBTEVSQU9SRU5ESU1FTlRPQlJVVE9PVUFSRVRJUkFEQU1FTlNBTFFVRUdBTkhBVkFIQUJJ
+VFVBTE1FTlRFRU1KVUxIT0RFMjAxMF9Jc051bGwAZ2V0X1JFR0nDg09HRU9HUsOBRklDQV9Jc051
+bGwAc2V0X1JFR0nDg09HRU9HUsOBRklDQV9Jc051bGwAZ2V0X0VNUVVFTVVOSUPDjVBJT0VVTklE
+QURFREFGRURFUkHDh8ODT09VUEHDjVNFU1RSQU5HRUlST1RSQUJBTEhBX0lzTnVsbABzZXRfRU1R
+VUVNVU5JQ8ONUElPRVVOSURBREVEQUZFREVSQcOHw4NPT1VQQcONU0VTVFJBTkdFSVJPVFJBQkFM
+SEFfSXNOdWxsAGdldF9RVUFOVE9TVFJBQkFMSE9TVElOSEFfSXNOdWxsAHNldF9RVUFOVE9TVFJB
+QkFMSE9TVElOSEFfSXNOdWxsAGdldF9Dw5NESUdPREFSRUdJw4NPTUVUUk9QT0xJVEFOQV9Jc051
+bGwAc2V0X0PDk0RJR09EQVJFR0nDg09NRVRST1BPTElUQU5BX0lzTnVsbABnZXRfVklWRUVNQ09N
+UEFOSElBREVDw5ROSlVHRU9VQ09NUEFOSEVJUk9BX0lzTnVsbABzZXRfVklWRUVNQ09NUEFOSElB
+REVDw5ROSlVHRU9VQ09NUEFOSEVJUk9BX0lzTnVsbABnZXRfTkVTU0VUUkFCQUxIT0VSQV9Jc051
+bGwAc2V0X05FU1NFVFJBQkFMSE9FUkFfSXNOdWxsAGdldF9Tw4lSSUVRVUVGUkVRVUVOVEFfSXNO
+dWxsAHNldF9Tw4lSSUVRVUVGUkVRVUVOVEFfSXNOdWxsAGdldF9Tw4lSSUVBTk9RVUVGUkVRVUVO
+VEFfSXNOdWxsAHNldF9Tw4lSSUVBTk9RVUVGUkVRVUVOVEFfSXNOdWxsAGdldF9DVVJTT1FVRUZS
+RVFVRU5UQV9Jc051bGwAc2V0X0NVUlNPUVVFRlJFUVVFTlRBX0lzTnVsbABnZXRfRU1RVUVNVU5J
+Q8ONUElPVFJBQkFMSEFWQV9Jc051bGwAc2V0X0VNUVVFTVVOSUPDjVBJT1RSQUJBTEhBVkFfSXNO
+dWxsAGdldF9FTVFVRVBBw41TRVNUUkFOR0VJUk9UUkFCQUxIQVZBX0lzTnVsbABzZXRfRU1RVUVQ
+QcONU0VTVFJBTkdFSVJPVFJBQkFMSEFWQV9Jc051bGwAZ2V0X0VNUVVFVU5JREFERURBRkVERVJB
+w4fDg09UUkFCQUxIQVZBX0lzTnVsbABzZXRfRU1RVUVVTklEQURFREFGRURFUkHDh8ODT1RSQUJB
+TEhBVkFfSXNOdWxsAGdldF9BVElWSURBREVfSXNOdWxsAHNldF9BVElWSURBREVfSXNOdWxsAGdl
+dF9VRlFVRUZSRVFVRU5UQVZBRVNDT0xBT1VDUkVDSEVfSXNOdWxsAHNldF9VRlFVRUZSRVFVRU5U
+QVZBRVNDT0xBT1VDUkVDSEVfSXNOdWxsAGdldF9NVU5JQ8ONUElPUVVFRlJFUVVFTlRBVkFFU0NP
+TEFPVUNSRUNIRV9Jc051bGwAc2V0X01VTklDw41QSU9RVUVGUkVRVUVOVEFWQUVTQ09MQU9VQ1JF
+Q0hFX0lzTnVsbABnZXRfTVVOSUPDjVBJT0VVTklEQURFREFGRURFUkHDh8ODT09VUEHDjVNFU1RS
+QU5HRUlST1FVRUZSRVFVRU5UQVZBRVNDT0xBT1VDUkVDSEVfSXNOdWxsAHNldF9NVU5JQ8ONUElP
+RVVOSURBREVEQUZFREVSQcOHw4NPT1VQQcONU0VTVFJBTkdFSVJPUVVFRlJFUVVFTlRBVkFFU0NP
+TEFPVUNSRUNIRV9Jc051bGwAZ2V0X1BBw41TRVNUUkFOR0VJUk9RVUVGUkVRVUVOVEFWQUVTQ09M
+QU9VQ1JFQ0hFX0lzTnVsbABzZXRfUEHDjVNFU1RSQU5HRUlST1FVRUZSRVFVRU5UQVZBRVNDT0xB
+T1VDUkVDSEVfSXNOdWxsAGdldF9SRVRPUk5BRE9UUkFCQUxIT1BBUkFDQVNBRElBUklBTUVOVEVf
+SXNOdWxsAHNldF9SRVRPUk5BRE9UUkFCQUxIT1BBUkFDQVNBRElBUklBTUVOVEVfSXNOdWxsAGdl
+dF9URU1QT0RFTU9SQURJQU5BVUZfSXNOdWxsAHNldF9URU1QT0RFTU9SQURJQU5BVUZfSXNOdWxs
+AGdldF9WQUxPUkRPUkVORElNRU5UT0JSVVRPT1VBUkVUSVJBREFNRU5TQUxOT1RSQUJBTEhPUFJJ
+TkNJUEFMX0lzTnVsbABzZXRfVkFMT1JET1JFTkRJTUVOVE9CUlVUT09VQVJFVElSQURBTUVOU0FM
+Tk9UUkFCQUxIT1BSSU5DSVBBTF9Jc051bGwAZ2V0X1JFTkRJTUVOVE9OT1RSQUJBTEhPUFJJTkNJ
+UEFMX0lzTnVsbABzZXRfUkVORElNRU5UT05PVFJBQkFMSE9QUklOQ0lQQUxfSXNOdWxsAGdldF9F
+U1RBRE9DSVZJTF9Jc051bGwAc2V0X0VTVEFET0NJVklMX0lzTnVsbABnZXRfQ1VSU09ERURPVVRP
+UkFET19Jc051bGwAc2V0X0NVUlNPREVET1VUT1JBRE9fSXNOdWxsAGdldF9DVVJTT0RFTUVTVFJB
+RE9fSXNOdWxsAHNldF9DVVJTT0RFTUVTVFJBRE9fSXNOdWxsAGdldF9FU1DDiUNJRURPQ1VSU09N
+QUlTRUxFVkFET0NPTkNMVcONRE9fSXNOdWxsAHNldF9FU1DDiUNJRURPQ1VSU09NQUlTRUxFVkFE
+T0NPTkNMVcONRE9fSXNOdWxsAGdldF9RVUFOVEFTUEVTU09BU0VNUFJFR0FWQU5FU1NFVFJBQkFM
+SE9fSXNOdWxsAHNldF9RVUFOVEFTUEVTU09BU0VNUFJFR0FWQU5FU1NFVFJBQkFMSE9fSXNOdWxs
+AGdldF9RVUFMw4lPVEVNUE9IQUJJVFVBTEdBU1RPREVERVNMT0NBTUVOVE9ERVNVQUNBU0FBVMOJ
+T1RSQUJBTEhPX0lzTnVsbABzZXRfUVVBTMOJT1RFTVBPSEFCSVRVQUxHQVNUT0RFREVTTE9DQU1F
+TlRPREVTVUFDQVNBQVTDiU9UUkFCQUxIT19Jc051bGwAZ2V0X1NJVFVBw4fDg09ET0RPTUlDw41M
+SU9fSXNOdWxsAHNldF9TSVRVQcOHw4NPRE9ET01JQ8ONTElPX0lzTnVsbABnZXRfQ8OTRElHT0RP
+TVVOSUPDjVBJT19Jc051bGwAc2V0X0PDk0RJR09ET01VTklDw41QSU9fSXNOdWxsAGdldF9URU1Q
+T0RFTU9SQURJQU5PTVVOSUPDjVBJT19Jc051bGwAc2V0X1RFTVBPREVNT1JBRElBTk9NVU5JQ8ON
+UElPX0lzTnVsbABnZXRfQ09OQ0xVU8ODT0RFU1RFQ1VSU09fSXNOdWxsAHNldF9DT05DTFVTw4NP
+REVTVEVDVVJTT19Jc051bGwAZ2V0X1NFWE9fSXNOdWxsAHNldF9TRVhPX0lzTnVsbABnZXRfQ8OT
+RElHT0RBTUlDUk9SUkVHScODT19Jc051bGwAc2V0X0PDk0RJR09EQU1JQ1JPUlJFR0nDg09fSXNO
+dWxsAGdldF9Dw5NESUdPREFNRVNPUlJFR0nDg09fSXNOdWxsAHNldF9Dw5NESUdPREFNRVNPUlJF
+R0nDg09fSXNOdWxsAGdldF9OQVRVUkVaQURBVU5Jw4NPX0lzTnVsbABzZXRfTkFUVVJFWkFEQVVO
+ScODT19Jc051bGwAZ2V0X09DVVBBw4fDg09fSXNOdWxsAHNldF9PQ1VQQcOHw4NPX0lzTnVsbABn
+ZXRfVU5JREFERURBRkVERVJBw4fDg09fSXNOdWxsAHNldF9VTklEQURFREFGRURFUkHDh8ODT19J
+c051bGwAZ2V0X0NPTkNMVVPDg09ERU9VVFJPQ1VSU09TVVBFUklPUkRFR1JBRFVBw4fDg09fSXNO
+dWxsAHNldF9DT05DTFVTw4NPREVPVVRST0NVUlNPU1VQRVJJT1JERUdSQURVQcOHw4NPX0lzTnVs
+bABnZXRfQ1VSU09TVVBFUklPUkRFR1JBRFVBw4fDg09fSXNOdWxsAHNldF9DVVJTT1NVUEVSSU9S
+REVHUkFEVUHDh8ODT19Jc051bGwAZ2V0X07DjVZFTERFSU5TVFJVw4fDg09fSXNOdWxsAHNldF9O
+w41WRUxERUlOU1RSVcOHw4NPX0lzTnVsbABnZXRfVUZERVJFU0lEw4pOQ0lBQU5URVJJT1JfSXNO
+dWxsAHNldF9VRkRFUkVTSUTDik5DSUFBTlRFUklPUl9Jc051bGwAZ2V0X01VTklDw41QSU9ERVJF
+U0lEw4pOQ0lBQU5URVJJT1JfSXNOdWxsAHNldF9NVU5JQ8ONUElPREVSRVNJRMOKTkNJQUFOVEVS
+SU9SX0lzTnVsbABnZXRfVkFSScOBVkVMQVVYSUxJQVJEQUlEQURFQ0FMQ1VMQURBQU5PU0VNRVNF
+U19Jc051bGwAc2V0X1ZBUknDgVZFTEFVWElMSUFSREFJREFERUNBTENVTEFEQUFOT1NFTUVTRVNf
+SXNOdWxsAGdldF9WQUxPUkRPUkVORElNRU5UT0JSVVRPT1VBUkVUSVJBREFNRU5TQUxOT1NERU1B
+SVNUUkFCQUxIT1NFTVJFQUlTX0lzTnVsbABzZXRfVkFMT1JET1JFTkRJTUVOVE9CUlVUT09VQVJF
+VElSQURBTUVOU0FMTk9TREVNQUlTVFJBQkFMSE9TRU1SRUFJU19Jc051bGwAZ2V0X1JFTkRJTUVO
+VE9FTVRPRE9TT1NUUkFCQUxIT1NfSXNOdWxsAHNldF9SRU5ESU1FTlRPRU1UT0RPU09TVFJBQkFM
+SE9TX0lzTnVsbABnZXRfUkVORElNRU5UT0VNVE9ET1NPU1RSQUJBTEhPU0VNTsK6REVTQUzDgVJJ
+T1NNw41OSU1PU19Jc051bGwAc2V0X1JFTkRJTUVOVE9FTVRPRE9TT1NUUkFCQUxIT1NFTU7CukRF
+U0FMw4FSSU9TTcONTklNT1NfSXNOdWxsAGdldF9DVVJTT01BSVNFTEVWQURPUVVFRlJFUVVFTlRP
+VV9Jc051bGwAc2V0X0NVUlNPTUFJU0VMRVZBRE9RVUVGUkVRVUVOVE9VX0lzTnVsbABTZXROdWxs
+AGdldF9JdGVtAHNldF9JdGVtAFN5c3RlbQBUcmltAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lz
+dGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24A
+Z2V0X0lucHV0Q29sdW1uQ29sbGVjdGlvbgBnZXRfSW5wdXRDb2xsZWN0aW9uAEludmFsaWRPcGVy
+YXRpb25FeGNlcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBNZW1iZXJJbmZvAFBy
+b3BlcnR5SW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRU
+U1BpcGVsaW5lV3JhcABDaGFyAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZm
+ZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZS5X
+cmFwcGVyAElFbnVtZXJhdG9yAEdldEVudW1lcmF0b3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFn
+bm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMA
+U0NfMTZhNWQwODVmNWQ2NDQwNGI4YTdjYzlmYTEyZGIxNGEuUHJvcGVydGllcy5SZXNvdXJjZXMu
+cmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDXzE2YTVkMDg1ZjVkNjQ0MDRiOGE3Y2M5ZmExMmRi
+MTRhLlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5k
+ZXhlcwBTZXR0aW5ncwBFcXVhbHMAU3lzdGVtLkNvbGxlY3Rpb25zAENvbm5lY3Rpb25zAGdldF9D
+aGFycwBSdW50aW1lSGVscGVycwBDb25jYXQAT2JqZWN0AEVuZE9mUm93c2V0AGdldF9EZWZhdWx0
+AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABnZXRfQ3VycmVu
+dABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxp
+bmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQATW92ZU5leHQASW5wdXQwX1Byb2Nlc3NJbnB1dFJv
+dwBOZXh0Um93AEluaXRpYWxpemVBcnJheQBnZXRfQXNzZW1ibHkAb3BfRXF1YWxpdHkAR2V0UHJv
+cGVydHkAAA9fAEkAcwBOAHUAbABsAAABAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkA
+IABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBp
+AGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMA
+dABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADEANgBhADUAZAAwADgANQBmADUAZAA2
+ADQANAAwADQAYgA4AGEANwBjAGMAOQBmAGEAMQAyAGQAYgAxADQAYQAuAFAAcgBvAHAAZQByAHQA
+aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAADOdQnIt4wRpBM/1Uf0s3mAAQgAQEIAyAAAQUg
+AQEREQQgAQEOBSABARFpDwcIHQMSORI9DhJBHA4SSQkAAgESgIURgIkFIAASgI0FIAASgJEGIAES
+gJkcBSAAEoCdBCAAEjkDIAAcAyAADgUgABKAoQUgARJBDgQgAQIOBiACHBwdHAgAARKAoRGArQkA
+AgISgKESgKEHIAMBHBwdHAMgAAIKBwcOCAIdAwgDAwQgAQMIBQACDg4OAyAACAkgAwESUR0IElUD
+BhJRAwYdCAQgAQ4IBSACAQgcBCABAggHIAICDhGAtQUgAR0ICAUgABKAuQcgAgEOEoC5CLd6XFYZ
+NOCJCImEXc2AgMyRAwYSFAMGEhgDBhJZAwYSYQMGEmUDBhIgAwYRKAUgAQESDAYgAg4OHQMEIAEB
+AgkgBAEIDhJRElUFIAEBElkEAAASYQQAABJlBQABARJlBAAAEiADAAABAygADgMoAAIECAASYQQI
+ABJlBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAA
+KAEAI1NDXzE2YTVkMDg1ZjVkNjQ0MDRiOGE3Y2M5ZmExMmRiMTRhAAAFAQAAAAAWAQARQ29weXJp
+Z2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3Jr
+RGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41BAEAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3Rl
+bS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1
+bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVz
+b3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA2HMAAAAAAAAA
+AAAA8nMAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAORzAAAAAAAAAAAAAAAAX0NvckRsbE1haW4A
+bXNjb3JlZS5kbGwAAAAAAP8lACAAECwALgAoACkALwAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAA
+MAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFiAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBW
+AEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAA
+AAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAE
+AAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwA
+ZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABz
+AAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUA
+RABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwAxADYAYQA1AGQAMAA4ADUAZgA1AGQANgA0
+ADQAMAA0AGIAOABhADcAYwBjADkAZgBhADEAMgBkAGIAMQA0AGEAAAAwAAgAAQBGAGkAbABlAFYA
+ZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBh
+AG0AZQAAAFMAQwBfADEANgBhADUAZAAwADgANQBmADUAZAA2ADQANAAwADQAYgA4AGEANwBjAGMA
+OQBmAGEAMQAyAGQAYgAxADQAYQAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBp
+AGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA4AAAAKgABAAEATABlAGcA
+YQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBp
+AGwAZQBuAGEAbQBlAAAAUwBDAF8AMQA2AGEANQBkADAAOAA1AGYANQBkADYANAA0ADAANABiADgA
+YQA3AGMAYwA5AGYAYQAxADIAZABiADEANABhAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0
+AE4AYQBtAGUAAAAAAFMAQwBfADEANgBhADUAZAAwADgANQBmADUAZAA2ADQANAAwADQAYgA4AGEA
+NwBjAGMAOQBmAGEAMQAyAGQAYgAxADQAYQAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBp
+AG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkA
+bwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAABwAAAMAAAABDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_16a5d085f5d64404b8a7cc9fa12db14a</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="1">
+                    <arrayElement
+                      dataType="System.String">&lt;SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"&gt;
+&lt;SOAP-ENV:Body&gt;
+&lt;a1:ScriptBreakpointInfo id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.SqlServer.VSTAHosting/Microsoft.SqlServer.VSTAScriptingLib%2C%20Version%3D14.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3D89845dcd8080cc91"&gt;
+&lt;Enabled&gt;true&lt;/Enabled&gt;
+&lt;File id="ref-3"&gt;main.cs&lt;/File&gt;
+&lt;FileLine&gt;122&lt;/FileLine&gt;
+&lt;FileColumn&gt;9&lt;/FileColumn&gt;
+&lt;/a1:ScriptBreakpointInfo&gt;
+&lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;
+</arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">21</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[UNIDADE DA FEDERAÇÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="UNIDADE DA FEDERAÇÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[UNIDADE DA FEDERAÇÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CÓDIGO DO MUNICÍPIO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="CÓDIGO DO MUNICÍPIO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CÓDIGO DO MUNICÍPIO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[REGIÃO GEOGRÁFICA]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="REGIÃO GEOGRÁFICA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[REGIÃO GEOGRÁFICA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CÓDIGO DA MESORREGIÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="CÓDIGO DA MESORREGIÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CÓDIGO DA MESORREGIÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CÓDIGO DA MICRORREGIÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="CÓDIGO DA MICRORREGIÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CÓDIGO DA MICRORREGIÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CÓDIGO DA REGIÃO METROPOLITANA]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="CÓDIGO DA REGIÃO METROPOLITANA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CÓDIGO DA REGIÃO METROPOLITANA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[SITUAÇÃO DO DOMICÍLIO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="SITUAÇÃO DO DOMICÍLIO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[SITUAÇÃO DO DOMICÍLIO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[SEXO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="SEXO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[SEXO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[VARIÁVEL AUXILIAR DA IDADE CALCULADA (ANOS E MESES)]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="VARIÁVEL AUXILIAR DA IDADE CALCULADA (ANOS E MESES)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[VARIÁVEL AUXILIAR DA IDADE CALCULADA (ANOS E MESES)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[TEMPO DE MORADIA NA UF]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="TEMPO DE MORADIA NA UF"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[TEMPO DE MORADIA NA UF]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[TEMPO DE MORADIA NO MUNICÍPIO]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="TEMPO DE MORADIA NO MUNICÍPIO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[TEMPO DE MORADIA NO MUNICÍPIO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[UF DE RESIDÊNCIA ANTERIOR]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="UF DE RESIDÊNCIA ANTERIOR"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[UF DE RESIDÊNCIA ANTERIOR]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[MUNICÍPIO DE RESIDÊNCIA ANTERIOR]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="MUNICÍPIO DE RESIDÊNCIA ANTERIOR"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[MUNICÍPIO DE RESIDÊNCIA ANTERIOR]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CURSO QUE FREQUENTA]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="CURSO QUE FREQUENTA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CURSO QUE FREQUENTA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[SÉRIE / ANO QUE FREQUENTA]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="SÉRIE / ANO QUE FREQUENTA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[SÉRIE / ANO QUE FREQUENTA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[SÉRIE QUE FREQUENTA]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="SÉRIE QUE FREQUENTA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[SÉRIE QUE FREQUENTA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CONCLUSÃO DE OUTRO CURSO SUPERIOR DE GRADUAÇÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="CONCLUSÃO DE OUTRO CURSO SUPERIOR DE GRADUAÇÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CONCLUSÃO DE OUTRO CURSO SUPERIOR DE GRADUAÇÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CURSO MAIS ELEVADO QUE FREQUENTOU]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="CURSO MAIS ELEVADO QUE FREQUENTOU"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CURSO MAIS ELEVADO QUE FREQUENTOU]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CONCLUSÃO DESTE CURSO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="CONCLUSÃO DESTE CURSO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CONCLUSÃO DESTE CURSO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[ESPÉCIE DO CURSO MAIS ELEVADO CONCLUÍDO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="ESPÉCIE DO CURSO MAIS ELEVADO CONCLUÍDO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[ESPÉCIE DO CURSO MAIS ELEVADO CONCLUÍDO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[NÍVEL DE INSTRUÇÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="NÍVEL DE INSTRUÇÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[NÍVEL DE INSTRUÇÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CURSO SUPERIOR DE GRADUAÇÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="CURSO SUPERIOR DE GRADUAÇÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CURSO SUPERIOR DE GRADUAÇÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CURSO DE MESTRADO]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="CURSO DE MESTRADO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CURSO DE MESTRADO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[CURSO DE DOUTORADO]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="CURSO DE DOUTORADO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[CURSO DE DOUTORADO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[UF QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="UF QUE FREQUENTAVA ESCOLA (OU CRECHE)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[UF QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[MUNICÍPIO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="MUNICÍPIO QUE FREQUENTAVA ESCOLA (OU CRECHE)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[MUNICÍPIO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[PAÍS ESTRANGEIRO QUE FREQUENTAVA ESCOLA (OU CRECHE)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[VIVE EM COMPANHIA DE CÔNJUGE OU COMPANHEIRO(A)]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="VIVE EM COMPANHIA DE CÔNJUGE OU COMPANHEIRO(A)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[VIVE EM COMPANHIA DE CÔNJUGE OU COMPANHEIRO(A)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[NATUREZA DA UNIÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="NATUREZA DA UNIÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[NATUREZA DA UNIÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[ESTADO CIVIL]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="ESTADO CIVIL"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[ESTADO CIVIL]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[QUANTOS TRABALHOS TINHA]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="QUANTOS TRABALHOS TINHA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[QUANTOS TRABALHOS TINHA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[OCUPAÇÃO]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="OCUPAÇÃO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[OCUPAÇÃO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[ATIVIDADE]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="ATIVIDADE"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[ATIVIDADE]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[NESSE TRABALHO ERA]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="NESSE TRABALHO ERA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[NESSE TRABALHO ERA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[QUANTAS PESSOAS EMPREGAVA NESSE TRABALHO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="QUANTAS PESSOAS EMPREGAVA NESSE TRABALHO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[QUANTAS PESSOAS EMPREGAVA NESSE TRABALHO]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[NO TRABALHO PRINCIPAL, QUAL ERA O RENDIMENTO BRUTO (OU A RETIRADA) MENSAL QUE GANHAVA HABITUALMENTE EM JULHO DE 2010]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="NO TRABALHO PRINCIPAL, QUAL ERA O RENDIMENTO BRUTO (OU A RETIRADA) MENSAL QUE GANHAVA HABITUALMENTE EM JULHO DE 2010"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[NO TRABALHO PRINCIPAL, QUAL ERA O RENDIMENTO BRUTO (OU A RETIRADA) MENSAL QUE GANHAVA HABITUALMENTE EM JULHO DE 2010]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NO TRABALHO PRINCIPAL]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NO TRABALHO PRINCIPAL"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NO TRABALHO PRINCIPAL]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[RENDIMENTO NO TRABALHO PRINCIPAL]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="RENDIMENTO NO TRABALHO PRINCIPAL"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[RENDIMENTO NO TRABALHO PRINCIPAL]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NOS DEMAIS TRABALHOS (EM REAIS)]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NOS DEMAIS TRABALHOS (EM REAIS)"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[VALOR DO RENDIMENTO BRUTO (OU A RETIRADA) MENSAL NOS DEMAIS TRABALHOS (EM REAIS)]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[RENDIMENTO EM TODOS OS TRABALHOS]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="RENDIMENTO EM TODOS OS TRABALHOS"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[RENDIMENTO EM TODOS OS TRABALHOS]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[RENDIMENTO EM TODOS OS TRABALHOS EM Nº DE SALÁRIOS MÍNIMOS]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="RENDIMENTO EM TODOS OS TRABALHOS EM Nº DE SALÁRIOS MÍNIMOS"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[RENDIMENTO EM TODOS OS TRABALHOS EM Nº DE SALÁRIOS MÍNIMOS]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[EM QUE MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO TRABALHA]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="EM QUE MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO TRABALHA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[EM QUE MUNICÍPIO E UNIDADE DA FEDERAÇÃO OU PAÍS ESTRANGEIRO TRABALHA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[EM QUE UNIDADE DA FEDERAÇÃO TRABALHAVA]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="EM QUE UNIDADE DA FEDERAÇÃO TRABALHAVA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[EM QUE UNIDADE DA FEDERAÇÃO TRABALHAVA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[EM QUE MUNICÍPIO TRABALHAVA]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="EM QUE MUNICÍPIO TRABALHAVA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[EM QUE MUNICÍPIO TRABALHAVA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[EM QUE PAÍS ESTRANGEIRO TRABALHAVA]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="EM QUE PAÍS ESTRANGEIRO TRABALHAVA"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[EM QUE PAÍS ESTRANGEIRO TRABALHAVA]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[RETORNA DO TRABALHO PARA CASA DIARIAMENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="RETORNA DO TRABALHO PARA CASA DIARIAMENTE"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[RETORNA DO TRABALHO PARA CASA DIARIAMENTE]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0].Columns[QUAL É O TEMPO HABITUAL GASTO DE DESLOCAMENTO DE SUA CASA ATÉ O TRABALHO]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="QUAL É O TEMPO HABITUAL GASTO DE DESLOCAMENTO DE SUA CASA ATÉ O TRABALHO"
+                      lineageId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output].Columns[QUAL É O TEMPO HABITUAL GASTO DE DESLOCAMENTO DE SUA CASA ATÉ O TRABALHO]"
+                      usageType="readWrite" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Importar Dados Pessoais\Tratar valores.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
               refId="Package\Importar Dados Pessoais.Paths[Derived Column Output]"
-              endId="Package\Importar Dados Pessoais\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Importar Dados Pessoais\Tratar valores.Inputs[Input 0]"
               name="Derived Column Output"
               startId="Package\Importar Dados Pessoais\Derived Column.Outputs[Derived Column Output]" />
             <path
@@ -3203,6 +6193,11 @@
               endId="Package\Importar Dados Pessoais\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Importar Dados Pessoais\Amostra Censo 2010.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Importar Dados Pessoais.Paths[Output 0]"
+              endId="Package\Importar Dados Pessoais\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Output 0"
+              startId="Package\Importar Dados Pessoais\Tratar valores.Outputs[Output 0]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3967,113 +6962,75 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="196,42"
-          Id="Package\Importar Dados Pessoais"
-          TopLeft="31.5,73.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Importar Regiões"
-          TopLeft="275,74" />
+          Size="167,42"
+          Id="Package\Importar Atividade"
+          TopLeft="845,138" />
         <NodeLayout
           Size="208,42"
-          Id="Package\Importar Cursos Superiores"
-          TopLeft="574,66" />
+          Id="Package\Importar Cursos Doutorado"
+          TopLeft="573,137" />
         <NodeLayout
           Size="202,42"
           Id="Package\Importar Cursos Mestrado"
           TopLeft="569,214" />
         <NodeLayout
           Size="208,42"
-          Id="Package\Importar Cursos Doutorado"
-          TopLeft="573,137" />
+          Id="Package\Importar Cursos Superiores"
+          TopLeft="574,66" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Importar Dados Pessoais"
+          TopLeft="31.5,73.5" />
         <NodeLayout
           Size="170,42"
           Id="Package\Importar Ocupação"
           TopLeft="839,72" />
         <NodeLayout
-          Size="167,42"
-          Id="Package\Importar Atividade"
-          TopLeft="845,138" />
+          Size="161,42"
+          Id="Package\Importar Regiões"
+          TopLeft="275,74" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Importar Dados Pessoais">
+    design-time-name="Package\Importar Atividade">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177,42"
-          Id="Package\Importar Dados Pessoais\OLE DB Destination"
-          TopLeft="330,321" />
+          Size="171,42"
+          Id="Package\Importar Atividade\OLE DB Destination"
+          TopLeft="443,300" />
         <NodeLayout
-          Size="187,42"
-          Id="Package\Importar Dados Pessoais\Amostra Censo 2010"
-          TopLeft="86,72" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Importar Dados Pessoais\Derived Column"
-          TopLeft="149,187" />
+          Size="139,42"
+          Id="Package\Importar Atividade\Excel Source"
+          TopLeft="388,145" />
         <EdgeLayout
-          Id="Package\Importar Dados Pessoais.Paths[Derived Column Output]"
-          TopLeft="228,229">
+          Id="Package\Importar Atividade.Paths[Excel Source Output]"
+          TopLeft="457.5,187">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="190.5,92"
+              EndConnector="71,113"
               Start="0,0"
-              End="190.5,84.5">
+              End="71,105.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42" />
+                    End="0,52.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42"
-                    Point2="0,46"
-                    Point3="4,46" />
+                    Point1="0,52.5"
+                    Point2="0,56.5"
+                    Point3="4,56.5" />
                   <mssgle:LineSegment
-                    End="186.5,46" />
+                    End="67,56.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="186.5,46"
-                    Point2="190.5,46"
-                    Point3="190.5,50" />
+                    Point1="67,56.5"
+                    Point2="71,56.5"
+                    Point3="71,60.5" />
                   <mssgle:LineSegment
-                    End="190.5,84.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Importar Dados Pessoais.Paths[Flat File Source Output]"
-          TopLeft="179.5,114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="48.5,73"
-              Start="0,0"
-              End="48.5,65.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.5"
-                    Point2="0,36.5"
-                    Point3="4,36.5" />
-                  <mssgle:LineSegment
-                    End="44.5,36.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.5,36.5"
-                    Point2="48.5,36.5"
-                    Point3="48.5,40.5" />
-                  <mssgle:LineSegment
-                    End="48.5,65.5" />
+                    End="71,105.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4086,58 +7043,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Importar Dados Pessoais\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Importar Regiões">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Importar Regiões\Excel Source"
-          TopLeft="150,122" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importar Regiões\OLE DB Destination"
-          TopLeft="134,218" />
-        <EdgeLayout
-          Id="Package\Importar Regiões.Paths[Excel Source Output]"
-          TopLeft="219.5,164">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Regiões\Excel Source">
+    design-time-name="Package\Importar Atividade\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4150,7 +7056,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Importar Regiões\OLE DB Destination">
+    design-time-name="Package\Importar Atividade\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4162,111 +7068,11 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Importar Cursos Superiores">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Importar Cursos Superiores\Excel Source"
-          TopLeft="295,315" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importar Cursos Superiores\OLE DB Destination"
-          TopLeft="303,434" />
-        <EdgeLayout
-          Id="Package\Importar Cursos Superiores.Paths[Excel Source Output]"
-          TopLeft="364.5,357">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="24,77"
-              Start="0,0"
-              End="24,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="20,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="20,38.5"
-                    Point2="24,38.5"
-                    Point3="24,42.5" />
-                  <mssgle:LineSegment
-                    End="24,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Importar Cursos Mestrado">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Importar Cursos Mestrado\Excel Source"
-          TopLeft="384,165" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importar Cursos Mestrado\OLE DB Destination"
-          TopLeft="417,248" />
-        <EdgeLayout
-          Id="Package\Importar Cursos Mestrado.Paths[Excel Source Output]"
-          TopLeft="453.5,207">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="49,41"
-              Start="0,0"
-              End="49,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.5"
-                    Point2="0,20.5"
-                    Point3="4,20.5" />
-                  <mssgle:LineSegment
-                    End="45,20.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="45,20.5"
-                    Point2="49,20.5"
-                    Point3="49,24.5" />
-                  <mssgle:LineSegment
-                    End="49,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <TaskHost
     design-time-name="Package\Importar Cursos Doutorado">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139,42"
           Id="Package\Importar Cursos Doutorado\Excel Source"
@@ -4306,17 +7112,340 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Doutorado\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Doutorado\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Importar Cursos Mestrado">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Importar Cursos Mestrado\Excel Source"
+          TopLeft="384,165" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Importar Cursos Mestrado\OLE DB Destination"
+          TopLeft="417,248" />
+        <EdgeLayout
+          Id="Package\Importar Cursos Mestrado.Paths[Excel Source Output]"
+          TopLeft="453.5,207">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49,41"
+              Start="0,0"
+              End="49,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.5"
+                    Point2="0,20.5"
+                    Point3="4,20.5" />
+                  <mssgle:LineSegment
+                    End="45,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45,20.5"
+                    Point2="49,20.5"
+                    Point3="49,24.5" />
+                  <mssgle:LineSegment
+                    End="49,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Mestrado\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Mestrado\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Importar Cursos Superiores">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Importar Cursos Superiores\OLE DB Destination"
+          TopLeft="303,434" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Importar Cursos Superiores\Excel Source"
+          TopLeft="295,315" />
+        <EdgeLayout
+          Id="Package\Importar Cursos Superiores.Paths[Excel Source Output]"
+          TopLeft="364.5,357">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24,77"
+              Start="0,0"
+              End="24,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="20,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20,38.5"
+                    Point2="24,38.5"
+                    Point3="24,42.5" />
+                  <mssgle:LineSegment
+                    End="24,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Superiores\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Cursos Superiores\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Importar Dados Pessoais">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Importar Dados Pessoais\OLE DB Destination"
+          TopLeft="482,356" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Importar Dados Pessoais\Amostra Censo 2010"
+          TopLeft="86,72" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Importar Dados Pessoais\Derived Column"
+          TopLeft="149,187" />
+        <EdgeLayout
+          Id="Package\Importar Dados Pessoais.Paths[Flat File Source Output]"
+          TopLeft="179.5,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.5,73"
+              Start="0,0"
+              End="48.5,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
+                  <mssgle:LineSegment
+                    End="44.5,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.5,36.5"
+                    Point2="48.5,36.5"
+                    Point3="48.5,40.5" />
+                  <mssgle:LineSegment
+                    End="48.5,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Importar Dados Pessoais\Tratar valores"
+          TopLeft="251,303" />
+        <EdgeLayout
+          Id="Package\Importar Dados Pessoais.Paths[Output 0]"
+          TopLeft="398,324">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84,53"
+              Start="0,0"
+              End="76.5,53">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="38,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38,0"
+                    Point2="42,0"
+                    Point3="42,4" />
+                  <mssgle:LineSegment
+                    End="42,49" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42,49"
+                    Point2="42,53"
+                    Point3="46,53" />
+                  <mssgle:LineSegment
+                    End="76.5,53" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importar Dados Pessoais.Paths[Derived Column Output]"
+          TopLeft="228,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.5,74"
+              Start="0,0"
+              End="96.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="92.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.5,37"
+                    Point2="96.5,37"
+                    Point3="96.5,41" />
+                  <mssgle:LineSegment
+                    End="96.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importar Dados Pessoais\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Importar Ocupação">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139,42"
           Id="Package\Importar Ocupação\Excel Source"
@@ -4356,140 +7485,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Importar Atividade">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Importar Atividade\Excel Source"
-          TopLeft="388,145" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importar Atividade\OLE DB Destination"
-          TopLeft="443,300" />
-        <EdgeLayout
-          Id="Package\Importar Atividade.Paths[Excel Source Output]"
-          TopLeft="457.5,187">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="71,113"
-              Start="0,0"
-              End="71,105.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,52.5"
-                    Point2="0,56.5"
-                    Point3="4,56.5" />
-                  <mssgle:LineSegment
-                    End="67,56.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="67,56.5"
-                    Point2="71,56.5"
-                    Point3="71,60.5" />
-                  <mssgle:LineSegment
-                    End="71,105.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Superiores\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Superiores\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Doutorado\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Doutorado\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Mestrado\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importar Cursos Mestrado\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Importar Ocupação\Excel Source">
     <Properties>
@@ -4516,8 +7519,48 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Importar Regiões">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Importar Regiões\OLE DB Destination"
+          TopLeft="134,218" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Importar Regiões\Excel Source"
+          TopLeft="150,122" />
+        <EdgeLayout
+          Id="Package\Importar Regiões.Paths[Excel Source Output]"
+          TopLeft="219.5,164">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Importar Atividade\Excel Source">
+    design-time-name="Package\Importar Regiões\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4530,7 +7573,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Importar Atividade\OLE DB Destination">
+    design-time-name="Package\Importar Regiões\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
